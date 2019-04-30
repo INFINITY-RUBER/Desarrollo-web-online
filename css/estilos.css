@@ -54,6 +54,9 @@ h1 strong{
  color: #026fff;  
 }
 
+h2 {
+  color: #050505;   
+}
 .hero {
     height: 300px;
     background-image: url('../images/hero.jpg');
@@ -90,7 +93,8 @@ h1 strong{
 }
 
 .project-details {
-    width: 500px
+    width: 500px;
+    color: black;
 }
 .project-imageContainer{
     width: 500px
@@ -99,9 +103,54 @@ h1 strong{
 .header {
   background-color: #1b2127;
   color: white;
+  display: flex;
+  height: 90px;
+  /* align-items: center; */
+  justify-content: space-between; 
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: o;
 }
 
 .header a {
   color: white;
   text-decoration: none; 
+}
+.menu {
+    height: inherit;
+}
+.header ol {
+    display: flex;
+    height: inherit;
+}
+.header ol li {
+    height: inherit;
+}
+.header a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
+.flexbox {
+display: flex;
+/* flex-wrap: nowrap;  */
+flex-wrap: wrap;  
+/* flex-direction: column; */
+}
+.box{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid red;
+    flex-shrink: 0;
 }
